@@ -44,7 +44,7 @@ app.post("/api/shorturl", function (req, res) {
     };
     res.status(200).json(info);
   } else {
-    res.status(400).json({ error: "Invalid URL" });
+    res.status(400).json({ error: "invalid url" });
   }
 });
 app.get("/api/shorturl/:id", function (req, res) {
